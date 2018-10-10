@@ -4,7 +4,7 @@ function getAnnouncements() {
         url: `http://mymillcreek.herokuapp.com/api/announcements`,
         method: `GET`,
         headers: {
-            'Access-Control-Allow-Origin': '*'
+            'Access-Control-Allow-Origin': 'http://mymillcreek.com'
         },
     }).then((res) => {
         for (var i = 0; i < res.length; i++) {
