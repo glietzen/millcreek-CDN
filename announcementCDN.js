@@ -2,8 +2,7 @@ function getAnnouncements() {
     $('.card-test').empty();
     $.ajax({
         url: `http://mymillcreek.herokuapp.com/api/announcements`,
-        method: `GET`,
-        dataType: 'jsonp'
+        method: `GET`
     }).then((res) => {
         for (var i = 0; i < res.length; i++) {
             let card = '';
