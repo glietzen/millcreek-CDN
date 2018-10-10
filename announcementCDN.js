@@ -3,9 +3,9 @@ function getAnnouncements() {
     $.ajax({
         url: `http://mymillcreek.herokuapp.com/api/announcements`,
         method: `GET`,
-        data: {
-            format: 'json'
-        }
+        headers: {
+            'Access-Control-Allow-Origin': '*'
+        },
     }).then((res) => {
         for (var i = 0; i < res.length; i++) {
             let card = '';
