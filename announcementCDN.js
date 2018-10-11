@@ -1,7 +1,7 @@
 function getAnnouncements() {
     $('.card-test').empty();
     $.ajax({
-        url: `http://mymillcreek.herokuapp.com/api/announcements`,
+        url: `https://mymillcreek.herokuapp.com/api/announcements`,
         method: `GET`,
         headers: {
             'Access-Control-Allow-Origin': 'http://mymillcreek.com'
