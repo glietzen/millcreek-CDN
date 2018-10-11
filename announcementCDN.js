@@ -1,13 +1,20 @@
 function getAnnouncements() {
     $('.card-test').empty();
+
+    $.ajaxSetup({
+        headers: {
+            "Access-Control-Allow-Origin": "*"
+        }
+    });
+
     $.ajax({
+
         url: `https://mymillcreek.herokuapp.com/api/announcements`,
         method: `GET`
     }).then((res) => {
         for (var i = 0; i < res.length; i++) {
             let card = '';
-
-            card+= `
+            card += `
             <div class="container py-3">
             <div class="card">
                 <div class="row ">
