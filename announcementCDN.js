@@ -25,8 +25,9 @@ function getAnnouncements() {
             $('.card-test').append(card)
         }
     })
-
+    
     $.ajax({
+
         url: `https://mymillcreek.herokuapp.com/api/classes`,
         method: `GET`
     }).then((res) => {
@@ -40,7 +41,10 @@ function getAnnouncements() {
 
 
             $('.classes-div').append(card)
-    }
-})
+        }
+    })
+
+
+}
 
 getAnnouncements();
