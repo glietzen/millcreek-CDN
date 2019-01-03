@@ -10,7 +10,7 @@ function getAnnouncements() {
 
     $.ajax({
 
-        url: `https://mymillcreek.herokuapp.com/api/announcements`,
+        url: `https://church-app-mngr-2018/api/announcements`,
         method: `GET`
     }).then((res) => {
         for (var i = 0; i < res.length; i++) {
