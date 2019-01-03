@@ -28,7 +28,7 @@ function getAnnouncements() {
     
     $.ajax({
 
-        url: `https://mymillcreek.herokuapp.com/api/classes`,
+        url: `https://church-app-mngr-2018.herokuapp.com/api/classes`,
         method: `GET`
     }).then((res) => {
         for (var i = 0; i < res.length; i++) {
